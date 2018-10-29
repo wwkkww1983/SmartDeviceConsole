@@ -1,0 +1,12 @@
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\SmartDeviceConsole.exe.config
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\SmartDeviceConsole.exe
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\SmartDeviceConsole.pdb
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\M2Mqtt.Net.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\Newtonsoft.Json.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\M2Mqtt.Net.pdb
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Release\Newtonsoft.Json.xml
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Release\SmartDeviceConsole.csprojAssemblyReference.cache
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Release\SmartDeviceConsole.csproj.CoreCompileInputs.cache
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Release\SmartDeviceConsole.csproj.CopyComplete
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Release\SmartDeviceConsole.exe
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Release\SmartDeviceConsole.pdb
