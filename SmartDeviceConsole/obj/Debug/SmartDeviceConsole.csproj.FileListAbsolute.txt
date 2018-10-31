@@ -1,0 +1,16 @@
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\SmartDeviceConsole.exe.config
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\SmartDeviceConsole.exe
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\SmartDeviceConsole.pdb
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\Google.ProtocolBuffers.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\M2Mqtt.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\MySql.Data.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\Newtonsoft.Json.dll
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\Google.ProtocolBuffers.xml
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\bin\Debug\Newtonsoft.Json.xml
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Debug\SmartDeviceConsole.csprojAssemblyReference.cache
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Debug\SmartDeviceConsole.csproj.CoreCompileInputs.cache
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Debug\SmartDeviceConsole.csproj.CopyComplete
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Debug\SmartDeviceConsole.exe
+E:\CSharpWorkshop\SmartDeviceConsole\SmartDeviceConsole\obj\Debug\SmartDeviceConsole.pdb

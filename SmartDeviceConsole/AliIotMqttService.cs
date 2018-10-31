@@ -161,4 +161,36 @@ namespace SmartDeviceConsole
             get { return iotDeviceInfo; }
         }
     }
+
+    class CableSensor
+    {
+        private string sensorId;
+        private String aliasName;
+        private String comment;
+        private String bindingDeviceId;
+
+        public string SensorId
+        {
+            set { sensorId = value; }
+            get { return sensorId; }
+        }
+
+        public string AliasName
+        {
+            set { aliasName = value; }
+            get { return aliasName; }
+        }
+
+        public string Comment
+        {
+            set { comment = value; }
+            get { return comment; }
+        }
+
+        public string BindingDeviceId
+        {
+            set { bindingDeviceId = value; }
+            get { return bindingDeviceId; }
+        }
+    }
 }

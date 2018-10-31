@@ -102,6 +102,14 @@ namespace SmartDeviceConsole
                 {
                     //添加测量单元 修改和删除接口后续增加
                     AddSensorHandler();
+                }else if(cmdLine.Equals("query sensor"))
+                {
+                    //查询传感器
+                    QuerySensorHandler();
+                }else if(cmdLine.Equals("remove sensor"))
+                {
+                    //删除传感器
+                    RemoveSensorHandler();
                 }
 
             }
@@ -462,6 +470,100 @@ namespace SmartDeviceConsole
             }
 
             Console.WriteLine("添加成功");
+            return;
+        }
+
+
+        static void QuerySensorHandler()
+        {
+            if (!LoginUtils.Instance.LoginStatus)
+            {
+                Console.WriteLine("请先登录");
+                return;
+            }
+
+            string url = serverUrl + "/query_sensor?" + Constant.productKeyParam + "=" + productKey + "&"
+                                               + Constant.userNameParam + "=" + LoginUtils.Instance.UserName;
+
+            string statusCode;
+            string responsStr = HttpUtils.Instance.CallGet(url, out statusCode);
+
+            if (!statusCode.Equals("OK"))
+            {
+                Console.WriteLine("添加失败，请确认网络连接");
+                return;
+            }
+
+            ValueWrapper<List<CableSensor>> valueWrapper = JsonConvert.DeserializeObject<ValueWrapper<List<CableSensor>>>(responsStr);
+
+            if (!valueWrapper.STATUS)
+            {
+                Console.WriteLine("查询失败：" + valueWrapper.ErrorMsg);
+                return;
+            }
+
+            List<CableSensor> sensorList = valueWrapper.VALUE;
+            if(sensorList == null)
+            {
+                Console.WriteLine("无测量单元");
+                return;
+            }
+
+            for(int i = 0; i < sensorList.Count; i++)
+            {
+                CableSensor sensor = sensorList[i];
+
+                Console.WriteLine("测量单元Id：" + sensor.SensorId);
+                if(sensor.AliasName != null)
+                {
+                    Console.WriteLine("测量单元别名：" + sensor.AliasName);
+                }
+
+                if(sensor.Comment != null)
+                {
+                    Console.WriteLine("测量单元备注：" + sensor.Comment);
+                }
+
+                Console.WriteLine("所属通信单元Id：" + sensor.BindingDeviceId);
+            }
+
+
+
+        }
+
+
+        static void RemoveSensorHandler()
+        {
+            if (!LoginUtils.Instance.LoginStatus)
+            {
+                Console.WriteLine("请先登录");
+                return;
+            }
+
+            Console.WriteLine("请输入要删除的测量单元的ID：");
+            string sensorId = Console.ReadLine();
+
+            string url = serverUrl + "/remove_sensor?" + Constant.productKeyParam + "=" + productKey + "&"
+                                               + Constant.userNameParam + "=" + LoginUtils.Instance.UserName + "&"
+                                               + Constant.sensorIdParam + "=" + sensorId;
+
+            string statusCode;
+            string responsStr = HttpUtils.Instance.CallGet(url, out statusCode);
+
+            if (!statusCode.Equals("OK"))
+            {
+                Console.WriteLine("删除失败，请确认网络连接");
+                return;
+            }
+
+            StatusWrapper wrapper = JsonConvert.DeserializeObject<StatusWrapper>(responsStr);
+            if (!wrapper.STATUS)
+            {
+                Console.WriteLine("删除失败： " + wrapper.ErrorMsg);
+                return;
+            }
+
+            Console.WriteLine("删除成功");
             return;
         }
 
